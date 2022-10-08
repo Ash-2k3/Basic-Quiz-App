@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@drawable/quizzapp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_margin="22dp"
+        />
+    <ImageView
+        android:layout_margin="22dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/resulttrophie"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:textSize="26sp"
+        tools:text="Ashwath"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Your score is 0 out of 7"
+        android:textSize="22sp"
+        android:layout_margin="16dp"
+        android:id="@+id/score"
+        />
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="FINISH"
+
+        />
+
+</LinearLayout>

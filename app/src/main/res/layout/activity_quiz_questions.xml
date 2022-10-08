@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionsActivity"
+    android:fillViewport="true"
+    android:background="#b9bab1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Which Country's Flag is this ?"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:layout_margin="16dp"
+            />
+        <ImageView
+            android:id="@+id/country_flag"
+            android:layout_margin="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/australia"
+            android:contentDescription="country flag"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:padding="8dp"
+            >
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="7"
+                android:progress="7"
+                android:indeterminate="false"
+                android:minHeight="50dp"
+                />
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0/9"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="India"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/default_background_option"
+            android:textColor="#CDCBCB"/>
+        <TextView
+            android:layout_margin="12dp"
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="India"
+            android:textColor="#CDCBCB"
+
+            android:gravity="center"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:background="@drawable/default_background_option"
+            />
+        <TextView
+            android:layout_margin="12dp"
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="India"
+            android:gravity="center"
+            android:background="@drawable/default_background_option"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:textColor="#CDCBCB"/>
+        <TextView
+            android:layout_margin="12dp"
+            android:id="@+id/option4"
+            android:background="@drawable/default_background_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="India"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#CDCBCB"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="22sp"
+            tools:text="SUBMIT"
+            android:layout_margin="12dp"
+
+            android:textStyle="bold"
+   />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
